@@ -69,14 +69,15 @@
 //
 // Limit Switches
 //
+// in iAM3D there are no max-endstops
 #define X_MIN_PIN           3
-#ifndef X_MAX_PIN
-  #define X_MAX_PIN         2
-#endif
-#define Y_MIN_PIN          14
-#define Y_MAX_PIN          15
+// #ifndef X_MAX_PIN
+//   #define X_MAX_PIN         2
+// #endif
+// #define Y_MIN_PIN          2 // old value-14, replaced with 2 to support interrupt-endstops
+#define Y_MAX_PIN          2
 #define Z_MIN_PIN          18
-#define Z_MAX_PIN          19
+// #define Z_MAX_PIN          19
 
 //
 // Z Probe (when not Z_MIN_PIN)
